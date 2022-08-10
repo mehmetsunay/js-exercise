@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="sctwo.js">
+    </script>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+
+   var urun=prompt("Ürün türünü giriniz: ", "A/B/C");
+
+   switch(urun)
+{
+    case "A":
+        document.write("Seçilen Ürün Türü:", urun);
+        document.write("<br>Seçilen Ürün Fiyatı:", fiyat[0], "TL <br>");
+        document.write("KDV Dahil Ürün Fiyatı:",(fiyat[0]*kdv[0]/100)+fiyat[0],"TL");
+    break;
+
+    case "B":
+        document.write("Seçilen Ürün Türü:", urun);
+        document.write("<br>Seçilen Ürün Fiyatı:", fiyat[1], "TL <br>");
+        document.write("KDV Dahil Ürün Fiyatı:",(fiyat[1]*kdv[1]/100)+fiyat[1],"TL");
+    break;
+
+    case "C":
+        document.write("Seçilen Ürün Türü:", urun);
+        document.write("<br>Seçilen Ürün Fiyatı:", fiyat[2], "TL <br>");
+        document.write("KDV Dahil Ürün Fiyatı:",(fiyat[2]*kdv[2]/100)+fiyat[2],"TL");
+    break;
+    default:
+    document.write("<font color='red'> Girilen ürün tanımlı değil</font>");
+    break;
+}
+   
+    </script>
+</body>
+</html>
